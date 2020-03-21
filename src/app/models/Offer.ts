@@ -1,0 +1,7 @@
+class Offer{
+
+}
+
+class AlertOfferPrice{
+
+}

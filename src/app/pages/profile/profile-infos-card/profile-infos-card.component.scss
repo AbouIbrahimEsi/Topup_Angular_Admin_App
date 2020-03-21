@@ -1,0 +1,27 @@
+@import '../../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+
+  nb-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include media-breakpoint-down(md) {
+    nb-card {
+      flex-direction: column;
+      justify-content: space-between;
+
+      .collapse {
+        display: inline-block;
+        position: absolute;
+        top: 0.7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+      }
+    }
+  }
+}

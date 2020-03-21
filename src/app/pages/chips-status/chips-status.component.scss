@@ -1,0 +1,109 @@
+/***** Nebular Css *****/
+@import '../../@theme/styles/themes';
+@include nb-install-component() {
+
+  .card-header{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .stock-title{
+    margin-top: 0.8rem;
+  }
+
+  .center-party{
+    text-align: center;
+    margin-top: 1.6rem;
+  }
+
+  .end-party{
+    text-align: end;
+    margin-top: 1rem;
+  }
+
+  .buttons-row {
+    margin: 0rem;
+  }
+
+  button[nbButton] {
+    margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+  }
+
+  .action-icon {
+    @include nb-ltr(margin-right, 0.7rem);
+    @include nb-rtl(margin-left, 0.7rem);
+  }
+
+  .actions-card {
+    //height: 8rem;
+  }
+
+  .card-body{
+    padding: 1.2rem 0rem 1.2rem 0rem;
+  }
+
+}
+
+/**** Material Css****/
+:host ::ng-deep .mat-sort-header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border: 0.2px solid lightgrey;
+  border-collapse: collapse;
+}
+
+th{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #31708f;
+}
+
+td{
+  text-align: center;
+  border: 0.2px solid lightgrey;
+  border-collapse: collapse;
+}
+
+tr{
+  text-align: center;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+tr.element-row:not(.expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.element-row:not(.expanded-row):active {
+  background: #efefef;
+}
+
+.element-row td {
+  border-bottom-width: 0;
+}
+
+.element-detail {
+  overflow: hidden;
+  display: flex;
+  float: right;
+}
+
+.element-detail button{
+  margin: 0.7rem;
+}
+

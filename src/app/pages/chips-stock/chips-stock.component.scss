@@ -1,0 +1,35 @@
+@import '../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+    .card-header{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .stock-title{
+        margin-top: 0.8rem;
+    }
+
+    .buttons-row {
+        margin: 0rem;
+      }
+    
+      button[nbButton] {
+        margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+      }    
+
+    .action-icon {
+    @include nb-ltr(margin-right, 0.7rem);
+    @include nb-rtl(margin-left, 0.7rem);
+  }
+
+  .actions-card {
+    //height: 8rem;
+  }
+  
+  .card-body{
+      padding: 1.2rem 0rem 1.2rem 0rem;
+  }
+  
+}
