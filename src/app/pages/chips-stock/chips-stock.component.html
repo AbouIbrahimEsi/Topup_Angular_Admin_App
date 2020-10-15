@@ -1,24 +1,11 @@
 
+<!-- ****************************************************** -->
 <div class="row">
   <div class="col-md-12 col-lg-12 col-xxxl-12">
-    <nb-card class="actions-card">
-      <nb-card-header class="card-header">
-        <div class="row"> 
-          <div class="h6 col-md-8 col-lg-8 col-xxxl-8 stock-title">
-            Consulter le solde total et de chaque oéprateur
-          </div>
-          <div class="buttons-row col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xxxl-4 offset-xxxl-4">
-            <button nbButton status="info"> Actualiser </button>
-            <button nbButton status="success"> Exporter </button>
-          </div> 
+        <div class="button-row">
+          <button mat-raised-button style="background-color: #206ea1; color: white"><i class="material-icons"> refresh </i> Actualiser</button>
+          <button mat-raised-button color="warn"><i class="material-icons"> import_export </i> Exporter</button>
         </div>
- 
-      </nb-card-header>
-      <nb-card-body style="text-align: center;" class="card-body">
-        <span class="h6 name bold">Solde total: </span>
-        <span class="h6 text-info">562000.00</span>
-      </nb-card-body>
-    </nb-card>
   </div>
 </div>
 
@@ -26,7 +13,7 @@
   <div class="col-xxxl-4 col-xl-4">
     <ngx-stock-operator operatorName="DJEZZY" ></ngx-stock-operator>
   </div>
-  
+
   <div class="col-xxxl-4 col-xl-4">
     <ngx-stock-operator operatorName="MOBILIS"></ngx-stock-operator>
   </div>
@@ -35,4 +22,13 @@
     <ngx-stock-operator operatorName="OOREDOO"></ngx-stock-operator>
   </div>
 
+</div>
+
+<div class="row">
+  <nb-card accent="info">
+    <nb-card-header>
+      <span class="h6 name bold">Solde total: </span>
+      <span class="h6 text-info">562000.00</span>
+    </nb-card-header>
+  </nb-card>
 </div>

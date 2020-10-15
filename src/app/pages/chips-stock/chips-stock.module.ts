@@ -5,6 +5,19 @@ import { StockOperatorComponent } from './stock-operator/stock-operator.componen
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NbCardModule, NbUserModule, NbButtonModule, NbActionsModule, NbIconModule, NbSelectModule, NbListModule } from '@nebular/theme';
+import {CdkTableModule} from "@angular/cdk/table";
+import {CdkTreeModule} from "@angular/cdk/tree";
+import {MatAutocompleteModule} from "@angular/material/autocomplete";
+import {MatButtonModule} from "@angular/material/button";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatCardModule} from "@angular/material/card";
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatInputModule} from "@angular/material/input";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatSortModule} from "@angular/material/sort";
+import {MatTableModule} from "@angular/material/table";
+import {MatDividerModule} from "@angular/material/divider";
 
 const routes: Routes = [{
   path: '',
@@ -13,9 +26,10 @@ const routes: Routes = [{
 
 @NgModule({
   declarations: [
-    ChipsStockComponent, 
+    ChipsStockComponent,
     StockOperatorComponent],
   imports: [
+    /********** Nebular Modules***********/
     RouterModule.forChild(routes),
     FormsModule,
     ThemeModule,
@@ -26,8 +40,26 @@ const routes: Routes = [{
     NbIconModule,
     NbSelectModule,
     NbListModule,
+    /*************************************/
+
+    /********** Material Modules***********/
+    CdkTableModule,
+    CdkTreeModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatInputModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTableModule,
+    MatDividerModule,
+    /*****************************************/
+
   ],
-  exports: [ 
+  exports: [
     RouterModule,
     ChipsStockComponent,
   ],
